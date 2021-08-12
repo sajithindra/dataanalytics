@@ -1,0 +1,7 @@
+Code to convert string to datetime object
+****************************************************************
+datetime.strptime(data['stage_date'][:10],'%Y-%m-%d')
+datetime.strptime(data['created'][:10],'%Y-%m-%d')
+****************************************************************
+newdf['created']= pandas.to_datetime(newdf['created'])
+newdf['close_date']= pandas.to_datetime(newdf['close_date'])
